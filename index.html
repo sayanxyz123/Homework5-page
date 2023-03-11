@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+
+        *{
+            margin: 0;
+        }
+
+    </style>
+   <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+<body>
+        <div id="root">  </div>
+
+        <script type="text/babel"> 
+        function Head(){
+            return <div style={{display:"flex",justifyContent:"space-between",alignItems:"center",backgroundColor:"red",height:"50px",color:"white",marginTop:"30px"}}>
+                 <div><h2 style={{marginLeft:"20px"}}>Koding made simple </h2></div>
+                <div style={{margin:"20px",height:"100%",width:"40%",display:"flex",justifyContent:"space-evenly",alignItems:"center",fontSize:"20px"}}>
+                  <a>Bootstrap</a>  
+                  <a>Team</a> 
+                  <a>Blog</a> 
+                    </div>
+                </div>
+        }
+        function Main(){
+            return <div>
+                <div style={{marginTop:"20px",backgroundColor:"#C0B9BC",height:"300px",display:"flex",alignItems:"center",justifyContent:"center",flexDirection:"column"}}>
+                    <h1 style={{display:"flex",marginLeft:"60px",alignItems:"center"}}>Customize bootstrap navbar</h1>
+                  <p style={{marginLeft:"120px"}}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, ullam.</p>
+                    </div>
+                </div>
+        }
+        function C(){
+            return <div>
+                <Head />
+                <Main />
+                </div>
+        }
+        ReactDOM.render(<C />,document.getElementById('root'))
+        
+        </script>
+</body>
+</html>
